@@ -1,0 +1,4 @@
+~ 10 feet
+
+run ps1.m to view the script
+feed it the names of the 2 images you want to use
