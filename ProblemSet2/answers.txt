@@ -1,0 +1,8 @@
+Problem 3)
+Because the answer to problem 2 is purely an affine reflection rectification,
+it does not rectify the skew on the image. Although both answers eliminate the
+vanishing points created by the parallel sides of the tiles and make all of
+the lines parallel, the solution to problem 1 is better able to make the
+perpendicular sides appear more perpendicular. The solution to problem 2 keeps
+roughly the same angle on the crossing lines, which is what causes the vertical
+squashing of the image.
