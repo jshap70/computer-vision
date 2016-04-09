@@ -26,8 +26,8 @@ pointmap = [ 0 0;
 A = [];
 
 for i = 1:4
-    A = [A ; 
-        points(i,1) points(i,2) 1 0 0 0 (-pointmap(i,1) * points(i,1)) (-pointmap(i,1) * points(i,2)) (-pointmap(i,1));
+    A = [A ; ...
+        points(i,1) points(i,2) 1 0 0 0 (-pointmap(i,1) * points(i,1)) (-pointmap(i,1) * points(i,2)) (-pointmap(i,1)); ...
         0 0 0 points(i,1) points(i,2) 1 (-pointmap(i,2) * points(i,1)) (-pointmap(i,2) * points(i,2)) (-pointmap(i,2));];
 end;
 
