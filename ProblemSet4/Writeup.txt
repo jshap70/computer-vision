@@ -1,0 +1,25 @@
+This was a bit of a tough problem set. I think mostly because there were a lot 
+of times where I was a bit unsure about whether I was on the right track or 
+not. It is sometimes difficult to tell if one matrix is correct when you 
+compare it to a different possible one. This is propogated latter on when 
+you're unsure if something isn't exact because of an actual mistake or purely
+because of error in the sampling of the data. Forexample, depending on what 
+points you choose in the image, the epipolar lines may be slightly off from the
+corresponding point in the other image. Is this just error? or is one of my 
+processes off. 
+
+Also, somethings were more difficult than I think they maybe needed to be. For 
+example, normalizing the intput points was surprizingly confusing, as I've 
+never had to do anything like that. But some quick google-foo helped me get 
+past that.
+
+Other thoughts:
+    the shed diary was very useful, as it helped me not get too far off
+    I still hate matlab. Despite being very powerful with this I am still 
+        tripping over common syntactical issues.
+    Thanks for extending the deadline, even though I'm getting it done on time 
+        it helps it be a lot less stressful.
+    
+I'm actually excited for next milestone where we can (hopefully) plot the 
+points in 3D like you did in class. I've understood that's what we've been 
+working towards for a while, but it is still nonetheless cool. 
