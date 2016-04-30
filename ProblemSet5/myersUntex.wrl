@@ -1,0 +1,159 @@
+#VRML V2.0 utf8
+
+WorldInfo {
+ title "Untextured model"
+}
+
+NavigationInfo {
+ headlight TRUE
+}
+
+DEF View1 Viewpoint {
+  orientation 0 1 0 3.14
+  position  0, 0, 0
+  fieldOfView 1
+  description "View 1 - Observer"
+}
+
+Background {
+  skyAngle [
+    1.39626
+    1.51844
+  ]
+  skyColor [
+    0.0 0.0 0.0
+    1.0 0.8 0.8
+    1.0 1.0 0.0
+  ]
+  groundAngle [
+    1.5708
+  ]
+  groundColor [
+    0.0 0.0 0.0
+    0.0 0.50196 0.0
+  ]
+}
+
+DEF MYPOINTS Coordinate {
+  point [
+         -0.59   -0.51   3.35,
+         -0.90   -0.50   3.79,
+         -1.10   -0.61   3.64,
+          0.21   -0.52   3.92,
+          0.40   -0.53   3.66,
+          1.03   -0.52   4.10,
+          1.04   -0.16   4.10,
+          0.41   -0.16   3.65,
+          0.22   -0.15   3.91,
+          0.29    0.14   3.80,
+         -0.59    0.12   3.34,
+         -0.90    0.13   3.78,
+         -0.90    0.42   3.77,
+         -1.09    0.42   3.64,
+         -0.12    0.37   2.30,
+          0.16    0.32   2.36,
+         -0.90   -0.61   3.80,
+         -0.59   -0.16   3.35,
+         -0.59   -0.10   3.35,
+         -0.27   -0.16   3.58,
+         -0.27   -0.10   3.57,
+          0.14    0.31   3.85,
+          0.43    0.36   2.60,
+         -0.50    0.40   2.65,
+          0.06    0.12   3.80,
+         -0.22    0.38   1.95,
+         -1.46   -0.58   4.15,
+         -1.45    0.43   4.13,
+         -0.58    0.41   3.34,
+          0.22    0.19   3.91,
+          0.41   -0.13   3.64,
+          1.04   -0.13   4.09,
+          0.22   -0.12   3.91,
+          0.07    0.19   3.80,
+          0.22    0.12   3.91,
+         -0.32    0.40   2.56,
+         -0.54    0.41   3.37,
+          0.22    0.41   3.90,
+          0.41    0.41   3.62,
+          1.07    0.41   4.09
+  ]
+}
+
+Transform {
+   rotation   0.00    0.00    1.00    3.14
+
+   children [
+
+      Shape  {
+         appearance Appearance {
+            material Material {
+          diffuseColor   1 1 1
+            }
+         }
+         geometry IndexedFaceSet {
+            coord USE MYPOINTS
+            coordIndex [ 2, 26, 27, 13, -1 ]
+         }
+      }
+
+      Shape  {
+         appearance Appearance {
+            material Material {
+          diffuseColor   1 1 1
+            }
+         }
+         geometry IndexedFaceSet {
+            coord USE MYPOINTS
+            coordIndex [ 13, 12, 16, 2, -1 ]
+         }
+      }
+
+      Shape  {
+         appearance Appearance {
+            material Material {
+          diffuseColor   1 1 1
+            }
+         }
+         geometry IndexedFaceSet {
+            coord USE MYPOINTS
+            coordIndex [ 0, 1, 12, 28, -1 ]
+         }
+      }
+
+      Shape  {
+         appearance Appearance {
+            material Material {
+          diffuseColor   1 1 1
+            }
+         }
+         geometry IndexedFaceSet {
+            coord USE MYPOINTS
+            coordIndex [ 0, 28, 37, 3, -1 ]
+         }
+      }
+
+      Shape  {
+         appearance Appearance {
+            material Material {
+          diffuseColor   1 1 1
+            }
+         }
+         geometry IndexedFaceSet {
+            coord USE MYPOINTS
+            coordIndex [ 37, 38, 4, 3, -1 ]
+         }
+      }
+
+      Shape  {
+         appearance Appearance {
+            material Material {
+          diffuseColor   1 1 1
+            }
+         }
+         geometry IndexedFaceSet {
+            coord USE MYPOINTS
+            coordIndex [ 5, 4, 38, 39, -1 ]
+         }
+      }
+
+      ]}
