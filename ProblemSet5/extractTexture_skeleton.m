@@ -1,9 +1,26 @@
 % Calculate the plane formed by the 3D vertices of the polygon using
 % X'*pi = 0.  Let A be a matrix built using several points.
+load('structure.mat')
+image1 = imread('myers2.ppm');
+image2 = imread('myers3.ppm');
+load('correspondences.mat');
+load('points_picked_by_hand.mat')
+X = [ X, moreX ];
+
+polys = {};
+polys{1} = [3, 27, 28, 14];
+polys{2} = [14, 13, 17, 3];
+polys{3} = [1, 2, 13, 29];
+polys{4} = [1, 29, 38, 4];
+polys{5} = [38, 39, 5, 4];
+polys{6} = [6, 5, 39, 40];
 
 
 % *** Fill in your code *** A =
-[U D V] = svd(A);
+A = [X(:,3)'; X(:,27)'; X(:,28)'; X(:,14)'];
+
+
+[U, D, V] = svd(A);
 plane = V(:,4);
 
 
