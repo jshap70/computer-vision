@@ -6,11 +6,11 @@ image2 = imread('myers3.ppm');
 
 load('correspondences.mat');
 
-[input_points, base_points] = cpselect(image1, image2, input_points, base_points, 'Wait', true);
+%[input_points, base_points] = cpselect(image1, image2, input_points, base_points, 'Wait', true);
 
 % save('correspondences.mat', 'input_points', 'base_points');
 
-showPoints(image1, image2, input_points', base_points');
+%showPoints(image1, image2, input_points', base_points');
 
 ps1 = [input_points'; ones(1, size(input_points, 1))];
 ps2 = [base_points'; ones(1, size(base_points, 1))];
@@ -55,29 +55,29 @@ end
 
 
 % draw epipolar line on figure
-figure(1);
-ax1 = axis;
+%figure(1);
+%ax1 = axis;
 
 % input point 1
-figure(2);
-ax2 = axis;
-pr = ginput(1);
-plot(pr(1), pr(2), 'ro', 'LineWidth', 2);
+%figure(2);
+%ax2 = axis;
+%pr = ginput(1);
+%plot(pr(1), pr(2), 'ro', 'LineWidth', 2);
 
-prn = [pr'; 1];
-linel = (prn' * F)';
-figure(1);
-drawLine(linel, ax1);
+%prn = [pr'; 1];
+%linel = (prn' * F)';
+%figure(1);
+%drawLine(linel, ax1);
 
 % input point 2
 
-pl = ginput(1);
-plot(pl(1), pl(2), 'ro', 'LineWidth', 2);
+%pl = ginput(1);
+%plot(pl(1), pl(2), 'ro', 'LineWidth', 2);
 
-pln = [pl'; 1];
-liner = (F * pln);
-figure(2);
-drawLine(liner, ax2);
+%pln = [pl'; 1];
+%liner = (F * pln);
+%figure(2);
+%drawLine(liner, ax2);
 
 % construct K
 fl = 1584;
@@ -137,18 +137,3 @@ P1pos4 = [R2, T2];
 %     if (ps1(:,i)'
 %     
 % end
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
