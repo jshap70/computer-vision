@@ -1,6 +1,0 @@
-Start with getLineSegs_building.m.  This is an example of how to call
-the other scripts.
-
-selectset.m and selectseg2.m can used to select a subset of the
-segments.
-
