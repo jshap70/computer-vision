@@ -1,0 +1,3 @@
+[submodule "3D-rubiks-cube-automated-reconstruction"]
+	path = 3D-rubiks-cube-automated-reconstruction
+	url = git@github.com:jshap70/3D-rubiks-cube-automated-reconstruction.git
